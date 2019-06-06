@@ -1,0 +1,46 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "window.zoomLevel": 0,
+  "files.autoSave": "off",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.tree.indent": 20,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "extensions.ignoreRecommendations": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+
+  //Prettier
+  "prettier.trailingComma": "es5",
+  "prettier.singleQuote": true,
+
+  //Format on Save
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+
+  //ESLINT
+  "eslint.options": {
+    "configFile": "C:/code/dot-files/.eslintrc.json"
+  },
+
+  // HIGHTLIGHTING
+  "workbench.colorCustomizations": {
+    //Selection highlighting
+    "editor.wordHighlightBackground": "#00000093",
+    // "editor.findMatchBackground": "#f337f3", //when you ctrl + F
+    // "editor.selectionHighlightBackground": "#0db136",
+    // "editor.selectionBackground": "#2e18aa", //when
+    //Bracket Highlighting
+    "editorBracketMatch.background": "#000",
+    "editorBracketMatch.border": "#000"
+  }
+}
