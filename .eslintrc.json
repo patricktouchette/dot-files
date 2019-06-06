@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+		"linebreak-style": ["error", "windows"],
+		"no-console": "off",
+		"import/extensions": ["error", "always"],
+		"import/prefer-default-export": "off",
+		"arrow-parens": ["error", "as-needed"],
+		"operator-linebreak": ["error", "before", { "overrides": { "=": "ignore" } }],
+		"comma-dangle": "off",
+		"object-curly-newline": ["error", { "multiline": true }],
+		"indent": ["error", 2, { "ignoredNodes": ["TemplateLiteral *"] }],
+		"no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["obj"] }]
+    }
+}
