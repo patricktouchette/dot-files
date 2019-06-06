@@ -1,3 +1,7 @@
+Install the VS code extensions
+prettier - code formatter
+eslinst
+
 GLOBAL INSTALL
 =================
 --global install with independant eslint and prettier
