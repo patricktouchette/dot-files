@@ -1,0 +1,52 @@
+GLOBAL INSTALL
+=================
+--global install with independant eslint and prettier
+
+eslint initial setup
+git init
+npm install eslint
+eslint --init
+
+npm install -g eslint-config-airbnb-base
+npm install -g eslint-plugin-import
+
+LOCAL INSTALL
+=====================
+--local install with prettier baked in
+git init
+npm init
+npm install eslint prettier
+npm install eslint-config-prettier eslint-plugin-prettier
+eslint --init
+
+This will ask you to install
+npm install eslint-config-airbnb-base
+npm install eslint-plugin-import
+
+modify .eslintrc.json file
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["airbnb-base", "prettier"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+	 "plugins": [ "prettier" ],
+    "rules": {
+	"prettier/prettier": ["error"]
+    }
+}
+
+create .prettierrc file
+{
+  //"printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
